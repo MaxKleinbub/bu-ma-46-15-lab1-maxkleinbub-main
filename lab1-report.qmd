@@ -1,0 +1,44 @@
+---
+title: "MA [46]15: Lab activity 1"
+author: "Your Name"
+format: gfm
+---
+
+# Introduction
+
+In this lab activity we do a preliminary analysis of the socio-economic indices that affect quality of life in large cities. We downloaded the indices by city in 2025 and put them at the `data` folder. We can now load them, along with the `tidyverse` package:
+
+```{r init}
+#| message: false
+library(tidyverse)
+ql <- read_tsv("data/qualitylife.tsv", comment = "#")
+```
+
+NOTE: activity instructions come between **`[==[`** and **`]==]`**, you can safely remove these lines in your final version.
+
+# Visualization
+
+Our first visualization is cost of living against pollution:
+
+```{r cl-pi}
+#| warning: false
+ggplot(ql, aes(`Cost of Living Index`, `Pollution Index`)) + geom_point() + geom_smooth()
+```
+
+**`[==[`** Add a smoother to the `cl-pi` chunk above. **`]==]`**
+
+We now investigate how the indices affect quality of life:
+
+**`[==[`** In the chunk below, keep the smoother and color the points by `Quality of Life Index`. **`]==]`**
+
+```{r cl-pi-ql}
+#| warning: false
+ggplot(ql, aes(`Cost of Living Index`, `Pollution Index`, color = `Quality of Life Index`)) + geom_point() + geom_smooth()
+```
+
+
+## Discussion
+
+**`[==[`** Comment on the relationship between cost of living and pollution and how they seem to affect quality of life. **`]==]`**
+
+Pollution and cost of living are inversely related. A high pollution index is correlated with a low cost of living. High pollution leads to a low quality of life while high cost of living is correlated with a high quality of life.

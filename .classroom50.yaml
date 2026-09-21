@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "bu-ma-46-15"
+assignment: "lab1"
+owner:
+  username: "MaxKleinbub"
+  id: 328862484
+  accepted_at: "2026-09-21T19:42:30Z"
+source:
+  owner: "bu-ma415"
+  owner_id: 42941819
+  repo: "lab1"
+  branch: "main"
