@@ -1,6 +1,6 @@
 ---
 title: "MA [46]15: Lab activity 1"
-author: "Your Name"
+author: "Max Kleinbub"
 format: gfm
 ---
 
