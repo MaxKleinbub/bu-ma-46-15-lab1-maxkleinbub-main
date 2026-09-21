@@ -42,3 +42,4 @@ ggplot(ql, aes(`Cost of Living Index`, `Pollution Index`, color = `Quality of Li
 **`[==[`** Comment on the relationship between cost of living and pollution and how they seem to affect quality of life. **`]==]`**
 
 Pollution and cost of living are inversely related. A high pollution index is correlated with a low cost of living. High pollution leads to a low quality of life while high cost of living is correlated with a high quality of life.
+hello
